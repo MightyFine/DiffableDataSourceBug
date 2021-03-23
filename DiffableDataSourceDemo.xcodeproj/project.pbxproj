@@ -13,6 +13,9 @@
 		F76EC07A2609A4BD001B88CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76EC0782609A4BD001B88CF /* Main.storyboard */; };
 		F76EC07C2609A4C0001B88CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76EC07B2609A4C0001B88CF /* Assets.xcassets */; };
 		F76EC07F2609A4C0001B88CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76EC07D2609A4C0001B88CF /* LaunchScreen.storyboard */; };
+		F76EC0882609A5EE001B88CF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76EC0872609A5EE001B88CF /* CollectionViewCell.swift */; };
+		F76EC08B2609A65C001B88CF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76EC08A2609A65C001B88CF /* CollectionViewCell.xib */; };
+		F76EC08F2609A6EB001B88CF /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76EC08E2609A6EB001B88CF /* CellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F76EC07B2609A4C0001B88CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76EC07E2609A4C0001B88CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76EC0802609A4C0001B88CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76EC0872609A5EE001B88CF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F76EC08A2609A65C001B88CF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		F76EC08E2609A6EB001B88CF /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,16 @@
 		F76EC0712609A4BD001B88CF /* DiffableDataSourceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F76EC0802609A4C0001B88CF /* Info.plist */,
 				F76EC0722609A4BD001B88CF /* AppDelegate.swift */,
+				F76EC08E2609A6EB001B88CF /* CellModel.swift */,
+				F76EC0872609A5EE001B88CF /* CollectionViewCell.swift */,
 				F76EC0742609A4BD001B88CF /* SceneDelegate.swift */,
 				F76EC0762609A4BD001B88CF /* ViewController.swift */,
-				F76EC0782609A4BD001B88CF /* Main.storyboard */,
 				F76EC07B2609A4C0001B88CF /* Assets.xcassets */,
+				F76EC08A2609A65C001B88CF /* CollectionViewCell.xib */,
 				F76EC07D2609A4C0001B88CF /* LaunchScreen.storyboard */,
-				F76EC0802609A4C0001B88CF /* Info.plist */,
+				F76EC0782609A4BD001B88CF /* Main.storyboard */,
 			);
 			path = DiffableDataSourceDemo;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				F76EC07F2609A4C0001B88CF /* LaunchScreen.storyboard in Resources */,
 				F76EC07C2609A4C0001B88CF /* Assets.xcassets in Resources */,
+				F76EC08B2609A65C001B88CF /* CollectionViewCell.xib in Resources */,
 				F76EC07A2609A4BD001B88CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +149,8 @@
 			files = (
 				F76EC0772609A4BD001B88CF /* ViewController.swift in Sources */,
 				F76EC0732609A4BD001B88CF /* AppDelegate.swift in Sources */,
+				F76EC0882609A5EE001B88CF /* CollectionViewCell.swift in Sources */,
+				F76EC08F2609A6EB001B88CF /* CellModel.swift in Sources */,
 				F76EC0752609A4BD001B88CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
