@@ -25,7 +25,10 @@ final class CollectionViewCell: UICollectionViewCell {
         layer.borderWidth = 1
         layer.borderColor = UIColor.black.cgColor
 
+        textLabel.textColor = .black
         textLabel.numberOfLines = 0
+
+        countLabel.textColor = .black
 
         button.setTitle("Increment", for: .normal)
     }
