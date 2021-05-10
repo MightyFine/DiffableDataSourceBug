@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         // offset when the snapshot is applied. The jump size appears to be directly correlated to
         // the estimated height and is likely due to the collection view not doing any diff and
         // applying the state in its entirety.
-        dataSource.apply(snapshot, animatingDifferences: false)
+        dataSource.apply(snapshot, animatingDifferences: true)
     }
 }
 
@@ -131,6 +131,11 @@ extension ViewController: CollectionViewCellDelegate {
         }
 
         models[indexPath.row].count += 1
-        updateUI()
+        models[indexPath.row].text = "New text new text new text new text new text new text new text new text new text new text new text new text new text new text new text new text new text new text new text new"
+
+        var snapshot = dataSource.snapshot()
+        snapshot.reloadItems([models[indexPath.row]])
+
+        dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
